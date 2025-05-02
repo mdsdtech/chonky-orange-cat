@@ -1,7 +1,6 @@
 name: Chonky Cat Scan
 
 on:
-  # Workflow dapat dijalankan secara manual
   workflow_dispatch:
   schedule:
     - cron: "0 */6 * * *"
@@ -10,11 +9,16 @@ jobs:
   update-proxies:
     runs-on: ubuntu-latest
     name: Search for Alive Orange Cat
-
+    
+    # 👇 Add write permissions (critical even for public repos)
+    permissions:
+      contents: write
+      
     steps:
     - name: 📂 Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4  # Updated to v4
       with:
+        fetch-depth: 0  # Fetches full history (needed for --force-with-lease)
         token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: 🐍 Set Up Python
@@ -26,17 +30,16 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         
-    
     - name: RUN Chonky Cat Scan
       run: |
         python3 ./chonkycat/main.py
 
-    #Commit dan push perubahan jika ada
     - name: 📤 Commit and Push Changes
-      if: ${{ success() }}
+      if: success()
       run: |
-        git config --global user.name "Github Actions"
+        git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
         git add .
-        git commit -m " 🔁 Update New Alive Orange Cat"
-        git push origin main --force
+        git commit -m "🔁 Update New Alive Orange Cat"
+        # Safer alternative to --force
+        git push origin main --force-with-lease
