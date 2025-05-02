@@ -9,13 +9,13 @@ on:
 jobs:
   update-proxies:
     runs-on: ubuntu-latest
-    name: Scan Proxy
+    name: Search for Alive Orange Cat
 
     steps:
     - name: 📂 Checkout Repository
       uses: actions/checkout@v3
       with:
-       token: ${{ secrets.GIT_TOKEN }}
+        token: ${{ secrets.GITHUB_TOKEN }}
     
     - name: 🐍 Set Up Python
       uses: actions/setup-python@v4
