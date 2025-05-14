@@ -4034,6 +4034,7 @@
 41.76.42.116,443,MU,Mauritius Telecom
 38.60.195.203,10478,MY,Kaopu Cloud Hk Limited
 38.60.193.247,13300,MY,Kaopu Cloud Hk Limited
+172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
 13.95.69.133,8443,NL,Microsoft Azure
 13.95.69.133,2053,NL,Microsoft Azure
 193.93.153.82,443,NL,Cloudflare Warp
