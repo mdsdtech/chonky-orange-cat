@@ -1,22 +1,25 @@
-# create by mayumi v.1
-"""
-NOte add lib re
-"""
+# Script by Mayumi
+# Edited by SadCat
+
+
 import socket
 import ssl
 import json
 import concurrent.futures
 import re
+import threading
 
 IP_RESOLVER = "speed.cloudflare.com"
 PATH_RESOLVER = "/meta"
 PROXY_FILE = "Orange/SadCat.txt"
 OUTPUT_FILE = "Orange/alivecat.txt"
+OUTPUT_JSON_FILE = "Orange/alivecat.json"  # New JSON output file
 
-active_proxies = []  # List untuk menyimpan proxy aktif
+active_proxies = []  # List to store active proxies for TXT
+json_proxies = {}    # Dictionary to store active proxies for JSON
+lock = threading.Lock()  # Lock for thread-safe updates to json_proxies
 
 def check(host, path, proxy):
-    """Melakukan koneksi SSL ke host tertentu dan mengambil respons JSON."""
     payload = (
         f"GET {path} HTTP/1.1\r\n"
         f"Host: {host}\r\n"
@@ -48,16 +51,16 @@ def check(host, path, proxy):
 
         return json.loads(body)
     except (json.JSONDecodeError, ValueError):
-        print(f"Error parsing JSON dari {ip}:{port}")
+        print(f"Error parsing JSON from {ip}:{port}")
     except (socket.error, ssl.SSLError) as e:
-        print(f"Error koneksi: {e}")
+        print(f"Error connection: {e}")
     finally:
         if conn:
             conn.close()
 
     return {}
 
-def clean_org_name(org_name): #Menghapus karakter yang tidak diinginkan dari nama organisasi.
+def clean_org_name(org_name):
     return re.sub(r'[^a-zA-Z0-9\s]', '', org_name) if org_name else org_name
 
 def process_proxy(proxy_line):
@@ -75,7 +78,6 @@ def process_proxy(proxy_line):
         ]
 
         if ori and pxy and ori.get("clientIp") != pxy.get("clientIp"):
-            
             org_name = clean_org_name(pxy.get("asOrganization"))
             proxy_country = pxy.get("country")
 
@@ -83,24 +85,31 @@ def process_proxy(proxy_line):
             print(f"CF PROXY LIVE!: {proxy_entry}")
             active_proxies.append(proxy_entry)
 
+            # Add to JSON structure
+            country_code = country.strip().upper()
+            ip_port = f"{ip}:{port}"
+            with lock:
+                if country_code not in json_proxies:
+                    json_proxies[country_code] = []
+                json_proxies[country_code].append(ip_port)
         else:
             print(f"CF PROXY DEAD!: {ip}:{port}")
 
     except ValueError:
-        print(f"Format baris proxy tidak valid: {proxy_line}. Pastikan formatnya ip,port,country,org")
+        print(f"Proxy lines was not valid: {proxy_line}. Make sure the proxy format like: ip,port,country,org")
     except Exception as e:
-        print(f"Error saat memproses proxy {proxy_line}: {e}")
+        print(f"Error while processing the proxy {proxy_line}: {e}")
 
-# Kosongkan file sebelum memulai scan
+# Delete the output file if it exists
 open(OUTPUT_FILE, "w").close()
-print(f"File {OUTPUT_FILE} telah dikosongkan sebelum proses scan dimulai.")
+print(f"File {OUTPUT_FILE} was deleted before scanning proxy start.")
 
-# Membaca daftar proxy dari file
+# Read proxy from file
 try:
     with open(PROXY_FILE, "r") as f:
         proxies = f.readlines()
 except FileNotFoundError:
-    print(f"File tidak ditemukan: {PROXY_FILE}")
+    print(f"File not found: {PROXY_FILE}")
     exit()
 
 max_workers = 20
@@ -109,10 +118,17 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
     futures = [executor.submit(process_proxy, proxy_line) for proxy_line in proxies]
     concurrent.futures.wait(futures)
 
-# Setelah semua proxy diproses, simpan ke file
+# Save file TXT dan JSON
 if active_proxies:
     with open(OUTPUT_FILE, "w") as f_me:
         f_me.write("\n".join(active_proxies) + "\n")
-    print(f"Semua proxy aktif disimpan ke {OUTPUT_FILE}")
+    print(f"All proxy saved in {OUTPUT_FILE} file.")
 
-print("Pengecekan proxy selesai.")
+if json_proxies:
+    with open(OUTPUT_JSON_FILE, "w") as f_json:
+        json.dump(json_proxies, f_json, indent=2)
+    print(f"Active proxy saved in {OUTPUT_JSON_FILE} for JSON format.")
+else:
+    print("None active proxy saved in the JSON.")
+
+print("Checking proxy completed.")
