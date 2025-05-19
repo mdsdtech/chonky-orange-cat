@@ -8002,11 +8002,15 @@
 38.60.194.202,33191,MY,Kaopu Cloud HK Limited
 38.60.193.247,13300,MY,Kaopu Cloud HK Limited
 154.90.39.188,48071,MY,Kaopu Cloud HK Limited
+45.159.51.121,32199,MY,Kaopu Cloud HK Limited
 45.195.69.98,30726,MY,Evoxt Enterprise
 45.195.76.190,29690,MY,Evoxt Enterprise
 210.186.12.244,443,MY,TM TECHNOLOGY SERVICES SDN BHD
 38.59.242.216,30011,MY,Evoxt Enterprise
 123.253.33.182,12306,MY,Gigabit Hosting Sdn Bhd
+103.186.117.6,10011,MY,Gigabit Hosting Sdn Bhd
+172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
+183.171.200.166,443,MY,Celcom Axiata
 167.71.5.250,2053,NL,Digital Ocean
 13.95.69.133,8443,NL,Microsoft Azure
 95.164.90.11,8443,NL,Kutumova Olena
