@@ -8008,8 +8008,8 @@
 210.186.12.244,443,MY,TM TECHNOLOGY SERVICES SDN BHD
 38.59.242.216,30011,MY,Evoxt Enterprise
 123.253.33.182,12306,MY,Gigabit Hosting Sdn Bhd
-103.186.117.6,10011,MY,Gigabit Hosting Sdn Bhd
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
+103.186.117.6,10011,MY,GB Network Solutions Sdn Bhd
 183.171.200.166,443,MY,Celcom Axiata
 154.83.86.52,55555,MY,Octopus Web Solution
 167.71.5.250,2053,NL,Digital Ocean
