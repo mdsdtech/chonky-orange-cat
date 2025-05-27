@@ -8011,6 +8011,7 @@
 103.186.117.6,10011,MY,Gigabit Hosting Sdn Bhd
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
 183.171.200.166,443,MY,Celcom Axiata
+154.83.86.52,55555,MY,Octopus Web Solution
 167.71.5.250,2053,NL,Digital Ocean
 13.95.69.133,8443,NL,Microsoft Azure
 95.164.90.11,8443,NL,Kutumova Olena
