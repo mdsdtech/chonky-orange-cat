@@ -8011,7 +8011,10 @@
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
 103.186.117.6,10011,MY,GB Network Solutions Sdn Bhd
 183.171.200.166,443,MY,Celcom Axiata
+183.171.200.170,443,MY,Celcom Axiata
 154.83.86.52,55555,MY,Octopus Web Solution
+202.184.58.1,443,MY,TT DOTCOM SDN BHD
+163.61.102.13,443,MY,Terabix Technologies Sdn Bhd
 167.71.5.250,2053,NL,Digital Ocean
 13.95.69.133,8443,NL,Microsoft Azure
 95.164.90.11,8443,NL,Kutumova Olena
