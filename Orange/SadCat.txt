@@ -8003,24 +8003,35 @@
 38.60.193.247,13300,MY,Kaopu Cloud HK Limited
 154.90.39.188,48071,MY,Kaopu Cloud HK Limited
 45.159.51.121,32199,MY,Kaopu Cloud HK Limited
+38.60.193.247,13300,MY,Kaopu Cloud HK Limited
+38.54.113.23,20205,MY,Kaopu Cloud HK Limited
+38.54.98.54,31842,MY,Kaopu Cloud HK Limited
+38.60.192.243,443,MY,Kaopu Cloud HK Limited
+38.54.113.23,443,MY,Kaopu Cloud HK Limited
+38.54.113.23,74,MY,Kaopu Cloud HK Limited
 45.195.69.98,30726,MY,Evoxt Enterprise
 45.195.76.190,29690,MY,Evoxt Enterprise
-210.186.12.244,443,MY,TM TECHNOLOGY SERVICES SDN BHD
 38.59.242.216,30011,MY,Evoxt Enterprise
 123.253.33.182,12306,MY,Gigabit Hosting Sdn Bhd
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
+61.4.109.18,19077,MY,Gigabit Hosting Sdn Bhd
 103.186.117.6,10011,MY,GB Network Solutions Sdn Bhd
+103.198.26.206,49698,MY,GB Network Solutions Sdn Bhd
+163.61.102.13,443,MY,Terabix Technologies Sdn Bhd
+103.131.191.170,7000,MY,Terabix Technologies Sdn Bhd
 183.171.200.166,443,MY,Celcom Axiata
 183.171.200.170,443,MY,Celcom Axiata
-202.184.58.1,443,MY,TT DOTCOM SDN BHD
-163.61.102.13,443,MY,Terabix Technologies Sdn Bhd
 154.83.86.52,55555,MY,Akile LTD
 154.83.87.67,9001,MY,HYTRON NETWORK HK
-47.250.139.59,443,MY,Alibaba Cloud LLC
 47.250.139.249,443,MY,Alibaba Cloud LLC
 47.254.255.125,443,MY,Alibaba Cloud LLC
+47.250.153.156,443,MY,Alibaba Cloud LLC
+47.250.139.59,443,MY,Alibaba Cloud LLC
 47.250.37.87,443,MY,Alibaba Cloud LLC
-101.99.75.125,443,MY, Unknown LTD
+210.186.12.244,443,MY,TM TECHNOLOGY SERVICES SDN BHD
+202.184.58.1,443,MY,TT DOTCOM SDN BHD
+20.17.107.137,443,MY,Microsoft Corporation
+101.99.75.125,443,NL, Unknown LTD
 167.71.5.250,2053,NL,Digital Ocean
 13.95.69.133,8443,NL,Microsoft Azure
 95.164.90.11,8443,NL,Kutumova Olena
