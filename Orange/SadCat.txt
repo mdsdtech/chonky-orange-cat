@@ -8019,8 +8019,9 @@
 103.198.26.206,49698,MY,GB Network Solutions Sdn Bhd
 163.61.102.13,443,MY,Terabix Technologies Sdn Bhd
 103.131.191.170,7000,MY,Terabix Technologies Sdn Bhd
-183.171.200.166,443,MY,Celcom Axiata
-183.171.200.170,443,MY,Celcom Axiata
+183.171.200.166,443,MY,Celcom Axiata Berhad
+183.171.200.162,443,MY,Celcom Axiata Berhad
+183.171.200.170,443,MY,Celcom Axiata Berhad
 154.83.86.52,55555,MY,Akile LTD
 154.83.87.67,9001,MY,HYTRON NETWORK HK
 47.250.139.249,443,MY,Alibaba Cloud LLC
