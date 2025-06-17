@@ -8003,7 +8003,6 @@
 38.60.193.247,13300,MY,Kaopu Cloud HK Limited
 154.90.39.188,48071,MY,Kaopu Cloud HK Limited
 45.159.51.121,32199,MY,Kaopu Cloud HK Limited
-38.60.193.247,13300,MY,Kaopu Cloud HK Limited
 38.54.113.23,20205,MY,Kaopu Cloud HK Limited
 38.54.98.54,31842,MY,Kaopu Cloud HK Limited
 38.60.192.243,443,MY,Kaopu Cloud HK Limited
