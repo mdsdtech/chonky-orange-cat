@@ -8013,6 +8013,7 @@
 38.59.242.216,30011,MY,Evoxt Enterprise
 123.253.33.182,12306,MY,Gigabit Hosting Sdn Bhd
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
+150.107.79.199,443,MY,Gigabit Hosting Sdn Bhd
 61.4.109.18,19077,MY,Gigabit Hosting Sdn Bhd
 103.186.117.6,10011,MY,GB Network Solutions Sdn Bhd
 103.198.26.206,49698,MY,GB Network Solutions Sdn Bhd
