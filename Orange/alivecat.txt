@@ -3269,7 +3269,9 @@
 61.4.109.18,19077,MY,Gigabit Hosting Sdn Bhd
 163.61.102.13,443,MY,Terabix Technologies Sdn Bhd
 103.198.26.206,49698,MY,GB Network Solutions Sdn Bhd
+202.184.54.209,443,MY,TT DOTCOM SDN BHD
 103.131.191.170,7000,MY,Terabix Technologies Sdn Bhd
+45.194.27.47,12262,MY,Evoxt Enterprise
 150.107.79.199,443,MY,Gigabit Hosting Sdn Bhd
 183.171.200.162,443,MY,Celcom Axiata Berhad
 154.83.86.52,55555,MY,Akile LTD
