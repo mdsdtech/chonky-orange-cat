@@ -8008,11 +8008,12 @@
 38.60.192.243,443,MY,Kaopu Cloud HK Limited
 38.54.113.23,443,MY,Kaopu Cloud HK Limited
 38.54.113.23,74,MY,Kaopu Cloud HK Limited
-45.195.69.98,30726,MY,Evoxt Enterprise
-45.194.27.47,12262,MY,Evoxt Enterprise
 45.195.76.190,29690,MY,Evoxt Enterprise
 38.59.242.216,30011,MY,Evoxt Enterprise
+45.195.69.98,30726,MY,Evoxt Enterprise
+45.194.27.47,12262,MY,Evoxt Enterprise
 155.254.60.225,443,MY,Evoxt Enterprise
+45.194.27.68,1085,MY,Evoxt Enterprise
 123.253.33.182,12306,MY,Gigabit Hosting Sdn Bhd
 172.93.165.228,443,MY,Gigabit Hosting Sdn Bhd
 150.107.79.199,443,MY,Gigabit Hosting Sdn Bhd
