@@ -1,4 +1,4 @@
-name: Rust CF Scan
+name: Chonky Cat Scan
 
 on:
   workflow_dispatch: # Memungkinkan dijalankan secara manual
